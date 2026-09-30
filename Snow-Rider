@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+Loading… (Drive Mad For edublocks)
+
+<script>
+(async () => {
+    try {
+        const response = await fetch(
+            "https://raw.githubusercontent.com/mrzoona/Car-survival-html/refs/heads/main/Drive%20mad"
+        );
+
+        const html = await response.text();
+
+        document.open();
+        document.write(html);
+        document.close();
+
+    } catch (err) {
+        document.body.innerHTML =
+            "<h1>Failed to load</h1><pre>" + err + "</pre>";
+    }
+})();
+</script>
+
+</body>
+</html>
